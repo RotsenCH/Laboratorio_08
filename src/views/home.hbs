@@ -1,0 +1,39 @@
+<div class="producto">
+
+    {{#each imagen1}}
+      <img src="{{this.ruta}}" alt="{{this.descripcion}}">
+    {{/each}}
+    <div class="info">
+      <h3 class="nombre">Producto 1</h3>
+      <p class="precio">$10.00</p>
+      <button onclick="agregarAlCarrito('Producto 1', 10.00)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="producto">
+        {{#each imagen2}}
+      <img src="{{this.ruta}}" alt="{{this.descripcion}}">
+    {{/each}}
+    <div class="info">
+      <h3 class="nombre">Producto 2</h3>
+      <p class="precio">$15.00</p>
+      <button onclick="agregarAlCarrito('Producto 2', 15.00)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="producto">
+    {{#each imagen3}}
+      <img src="{{this.ruta}}" alt="{{this.descripcion}}">
+    {{/each}}
+    <div class="info">
+      <h3 class="nombre">Producto 3</h3>
+      <p class="precio">$20.00</p>
+      <button onclick="agregarAlCarrito('Producto 3', 20.00)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h3>Carrito de compras</h3>
+    <ul id="carrito-lista"></ul>
+    <p class="total">Total: $<span id="carrito-total">0.00</span></p>
+  </div>
